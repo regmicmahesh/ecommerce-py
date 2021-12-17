@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "escp"
+version = "0.1.0"
+description = ""
+authors = ["Mahesh C. Regmi <0xmahadev@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sqlmodel = "^0.0.5"
+requests = "^2.26.0"
+
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
