@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Downloader</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+    <style>
+        .font-open {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-pt {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('static/images/sputify.jpeg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="px-5 py-10">
+        <nav class="flex flex-col md:flex-row  md:items-center md:justify-between overflow-x-hidden">
+            <a href="#" class="logo font-pt text-white text-3xl text-center font-bold">Spotify Downloader</a>
+        </nav>
+        <div class="header-body flex flex-col items-center md:my-16 overflow-x-hidden">
+            <h1 class="u1 left text-gray-200 mt-10 font-pt font-bold text-5xl text-center">Spotify Downloader</h1>
+            <p class="u1 left text-gray-300 py-3 text-xl font-bold text-center">Flask Based Online Spotify Downloader by @scifidemon<br> UI credits: @beast076.</p>
+            <div class="u1 left w-24 h-2 bg-blue-500 mb-10"></div>
+        </div>
+        <div class="downloader flex items-center justify-center" >
+            <form enctype = "multipart/form-data" method="POST" action="/" class="flex">
+                <input type="text" name="url" placeholder="Enter song link from spotify or song title" id="" class=" w-full py-2 px-3 focus:shadow-xl rounded-l-md">
+                <button type="submit" class="bg-green-500 text-white py-1 rounded-r-md hover:bg-green-600 px-5"><i class="fas fa-download"></i>  </button>
+            </form>
+        </div>
+    </header>
+    </footer>
+    <script src="https://kit.fontawesome.com/fa506bb92f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
